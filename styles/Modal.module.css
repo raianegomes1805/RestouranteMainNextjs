@@ -1,0 +1,94 @@
+.modalBackground {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(146, 6, 111, 0.24);
+}
+
+.modal {
+    width: 500px;
+    height: 320px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.modalTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modalTopTitulo {
+    color: black;
+}
+
+.modalTopIcone {
+    width: 20px;
+    height: 20px;
+}
+
+.modalHr {
+    margin: 0;
+}
+
+.modalConteudo {
+    padding: 20px;
+    display: flex;
+    height: 200px;
+}
+
+.modalProdutoImagem {
+    width: 125px;
+    height: 125px;
+}
+
+.modalProdutoImagemConteudo {
+    width: 100%;
+    height: 100%;
+}
+
+.modalProdutoInformacao {
+    margin-left: 10px;
+}
+
+.modalProdutoInformacao p {
+    margin: 0 0 10px 0;
+}
+
+.modalAcoes {
+    background-color: white;
+    width: 100%;
+    height: 58px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.modalFechar, .modalAdicionar {
+    height: 35px;
+    margin-right: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 0 10px 0 10px;
+    cursor: pointer;
+}
+
+.modalFechar {
+    border: 1px solid rgb(255, 0, 157);
+    background-color: rgb(255, 0, 157)
+}
+
+.modalAdicionar {    
+    border: 1px solid rgb(255, 0, 119);
+    background-color: rgb(255, 0, 119);
+}

@@ -1,0 +1,29 @@
+.filtros {
+    position: relative;
+}
+
+.filtrosLista {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.filtrosListaOpcao {
+    margin-right: 20px;
+    color: white;
+}
+
+.filtrosHr {
+    position: absolute;
+    border: 1px solid rgb(255, 255, 255);
+    width: 100%;
+    top: 30px;
+}
+
+.ativo {
+    color: #f152ff;
+    margin-right: 20px;
+    border-bottom: 3px solid #ea69b4;
+    padding-bottom: 20px;
+}

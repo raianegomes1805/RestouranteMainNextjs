@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 75px;
+}
+
+.headerNome {
+    margin: 0px;
+    color: white;
+}
+
+.headerData {
+    color: #f7a9d9;
+}
+
+.headerBuscador {
+    display: flex;
+    align-items: center;
+}
+
+.headerBuscadorText {
+    height: 45px;
+    border: 2px solid rgb(255, 103, 192);
+    border-radius: 10px;
+    color: #f500f5;
+    background: url("../public/img/search.svg") no-repeat scroll 10px 13px;
+    background-size: 15px;
+    padding-left: 30px;
+    background-color: #ff009d;
+    outline: none;
+}
+
+.headerBuscadorText::placeholder {
+    color: #e490d9;
+}
