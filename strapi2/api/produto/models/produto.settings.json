@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "produtos",
+  "info": {
+    "name": "produto"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nome": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "text"
+    },
+    "price": {
+      "type": "decimal",
+      "min": 0.1,
+      "required": true
+    },
+    "img": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "categoria": {
+      "type": "enumeration",
+      "enum": [
+        "sushi",
+        "Pizza"
+      ]
+    },
+    "pedidos": {
+      "via": "produtos",
+      "collection": "pedidos"
+    }
+  }
+}

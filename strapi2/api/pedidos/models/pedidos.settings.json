@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pedidos",
+  "info": {
+    "name": "pedidos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "quantidade": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "decimal",
+      "min": 0.1,
+      "default": 1
+    },
+    "produtos": {
+      "collection": "produto",
+      "via": "pedidos",
+      "dominant": true
+    }
+  }
+}
